@@ -1,42 +1,41 @@
 {
-  "name": "my-app-angular-test",
-  "version": "0.0.0",
-  "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
+  "name": "@paulbistr/ng-chat",
+  "version": "5.0.0",
+  "description": "A simple facebook/linkedin lookalike chat module for Angular applications.",
+  "author": "Rafael Carvalho",
+  "license": "MIT",
+  "homepage": "https://github.com/paulbistr/ng-chat",
+  "bugs": {
+    "url": "https://github.com/paulbistr/ng-chat/issues"
   },
-  "private": true,
-  "dependencies": {
-    "@angular/animations": "^17.3.12",
-    "@angular/common": "^17.3.12",
-    "@angular/compiler": "^17.3.12",
-    "@angular/core": "^17.3.12",
-    "@angular/forms": "^17.3.12",
-    "@angular/platform-browser": "^17.3.12",
-    "@angular/platform-browser-dynamic": "~16.2.0",
-    "@angular/router": "~16.2.0",
-    "rxjs": "~7.4.0",
-    "tslib": "~2.3.0",
-    "zone.js": "~0.14.1"
+  "peerDependencies": {
+    "@angular/common": "^16 || ^17 || ^18 || ^19 || ^20",
+    "@angular/core": "^16 || ^17 || ^18 || ^19 || ^20",
+    "@angular/forms": "^16 || ^17 || ^18 || ^19 || ^20",
+    "rxjs": "^7.8.1"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~16.2.0",
     "@angular/animations": "^17.3.12",
-    "@angular/cli": "^17.3.10",
     "@angular/common": "^17.3.12",
     "@angular/compiler": "^17.3.12",
     "@angular/compiler-cli": "^17.3.12",
     "@angular/core": "^17.3.12",
-    "@angular/language-service": "~16.2.0",
-    "@types/node": "~14.17.0",
-    "codelyzer": "~6.0.0",
-    "protractor": "~7.0.0",
-    "ts-node": "~10.9.0",
-    "tslint": "~6.1.0",
-    "typescript": "~5.2.2"
+    "@angular/forms": "^17.3.12",
+    "@angular/platform-browser": "^17.3.12",
+    "@angular-devkit/build-angular": "^17.3.10",
+    "@angular/cli": "^17.3.10",
+    "ng-packagr": "^17.3.0",
+    "rxjs": "^7.8.1",
+    "typescript": "~5.2.2",
+    "zone.js": "~0.14.1"
+  },
+  "scripts": {
+    "build": "ng-packagr -p ng-package.json",
+    "build-package": "ng-packagr -p ng-package.json"
+  },
+  "ngPackage": {
+    "lib": {
+      "entryFile": "index.ts"
+    }
   }
 }
