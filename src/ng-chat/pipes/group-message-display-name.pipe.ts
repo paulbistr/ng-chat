@@ -7,7 +7,7 @@ import { Message } from "../core/message";
 /*
  * Renders the display name of a participant in a group based on who's sent the message
 */
-@Pipe({name: 'groupMessageDisplayName'})
+@Pipe({name: 'groupMessageDisplayName', standalone: true})
 export class GroupMessageDisplayNamePipe implements PipeTransform {
     transform(participant: IChatParticipant, message: Message): string {
         if (participant && participant.participantType == ChatParticipantType.Group)

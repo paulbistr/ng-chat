@@ -9,12 +9,17 @@ import { Window } from "../../core/window";
 import { ParticipantResponse } from "../../core/participant-response";
 import { MessageCounter } from "../../core/message-counter";
 import { chatParticipantStatusDescriptor } from '../../core/chat-participant-status-descriptor';
+import { CommonModule } from '@angular/common';
+import { SanitizePipe } from '../../pipes/sanitize.pipe';
+import { FormsModule } from '@angular/forms';
 
 @Component({
     selector: 'ng-chat-friends-list',
     templateUrl: './ng-chat-friends-list.component.html',
     styleUrls: ['./ng-chat-friends-list.component.css'],
-    encapsulation: ViewEncapsulation.None
+    encapsulation: ViewEncapsulation.None,
+    imports: [CommonModule, FormsModule, SanitizePipe],
+    standalone: true
 })
 export class NgChatFriendsListComponent implements OnChanges {
     constructor() { }

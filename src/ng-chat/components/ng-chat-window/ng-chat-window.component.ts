@@ -13,12 +13,20 @@ import { ChatParticipantType } from "../../core/chat-participant-type.enum";
 import { IChatParticipant } from "../../core/chat-participant";
 import { MessageCounter } from "../../core/message-counter";
 import { chatParticipantStatusDescriptor } from '../../core/chat-participant-status-descriptor';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { EmojifyPipe } from '../../pipes/emojify.pipe';
+import { LinkfyPipe } from '../../pipes/linkfy.pipe';
+import { GroupMessageDisplayNamePipe } from '../../pipes/group-message-display-name.pipe';
+import { SanitizePipe } from '../../pipes/sanitize.pipe';
+import { NgChatOptionsComponent } from '../ng-chat-options/ng-chat-options.component';
 
 @Component({
     selector: 'ng-chat-window',
     templateUrl: './ng-chat-window.component.html',
     styleUrls: ['./ng-chat-window.component.css'],
-    encapsulation: ViewEncapsulation.None
+    encapsulation: ViewEncapsulation.None,
+    imports:[CommonModule, FormsModule, EmojifyPipe, LinkfyPipe, GroupMessageDisplayNamePipe, SanitizePipe, NgChatOptionsComponent]
 })
 export class NgChatWindowComponent {
     constructor() { }

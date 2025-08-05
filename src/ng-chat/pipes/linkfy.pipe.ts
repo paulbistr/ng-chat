@@ -3,7 +3,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 /*
  * Transforms text containing URLs or E-mails to valid links/mailtos
 */
-@Pipe({name: 'linkfy'})
+@Pipe({name: 'linkfy', standalone: true})
 export class LinkfyPipe implements PipeTransform {
     transform(message: string, pipeEnabled: boolean): string {
         if (pipeEnabled && message && message.length > 1)

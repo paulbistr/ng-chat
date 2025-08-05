@@ -13,17 +13,8 @@ import { NgChatFriendsListComponent } from './components/ng-chat-friends-list/ng
 import { NgChatWindowComponent } from './components/ng-chat-window/ng-chat-window.component';
 
 @NgModule({
-  imports: [CommonModule, FormsModule, HttpClientModule],
-  declarations: [
-    NgChat, 
-    EmojifyPipe, 
-    LinkfyPipe, 
-    SanitizePipe, 
-    GroupMessageDisplayNamePipe, 
-    NgChatOptionsComponent, 
-    NgChatFriendsListComponent, 
-    NgChatWindowComponent
-  ],
+  imports: [CommonModule, FormsModule, HttpClientModule, NgChat],
+  declarations: [],
   exports: [NgChat]
 })
 export class NgChatModule {

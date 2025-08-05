@@ -1,10 +1,13 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { IChatOption } from '../../core/chat-option';
+import { CommonModule } from '@angular/common';
 
 @Component({
     selector: 'ng-chat-options',
     templateUrl: './ng-chat-options.component.html',
-    styleUrls: ['./ng-chat-options.component.css']
+    styleUrls: ['./ng-chat-options.component.css'],
+	imports:[CommonModule],
+	standalone: true
 })
 export class NgChatOptionsComponent {
 
