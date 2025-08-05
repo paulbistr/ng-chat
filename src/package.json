@@ -1,5 +1,5 @@
 {
-  "name": "@tinyeye/ng-chat",
+  "name": "@paulbistr/ng-chat",
   "version": "4.0.1",
   "peerDependencies": {
     "@angular/common": "*",
@@ -40,9 +40,9 @@
   "description": "A simple facebook/linkedin lookalike chat module for Angular applications.",
   "author": "Rafael Carvalho",
   "license": "MIT",
-  "homepage": "https://github.com/tinyeye/ng-chat",
+  "homepage": "https://github.com/paulbistr/ng-chat",
   "bugs": {
-    "url": "https://github.com/tinyeye/ng-chat/issues"
+    "url": "https://github.com/paulbistr/ng-chat/issues"
   },
   "ngPackage": {
     "lib": {

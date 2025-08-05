@@ -1,4 +1,4 @@
-# @tinyeye/ng-chat
+# @paulbistr/ng-chat
 
 [![npm](https://img.shields.io/npm/v/ng-chat.svg)](https://www.npmjs.com/package/ng-chat)
 [![npm downloads](https://img.shields.io/npm/dm/ng-chat.svg)](https://npmjs.org/ng-chat)
@@ -16,7 +16,7 @@ A simple facebook/linkedin lookalike chat module for Angular applications.
 ### Installation
 
 ```
-npm install @tinyeye/ng-chat
+npm install @paulbistr/ng-chat
 ```
 
 ### Setup
@@ -24,7 +24,7 @@ npm install @tinyeye/ng-chat
 
 ```
 ...
-import { NgChatModule } from '@tinyeye/ng-chat';
+import { NgChatModule } from '@paulbistr/ng-chat';
 
 @NgModule({
   declarations: [
@@ -51,7 +51,7 @@ export class AppModule { }
 
 ```
 import { Component } from '@angular/core';
-import { ChatAdapter } from '@tinyeye/ng-chat';
+import { ChatAdapter } from '@paulbistr/ng-chat';
 import { MyAdapter } from 'my-adapter';
 
 @Component({
@@ -218,7 +218,7 @@ const imageMessage: Message = {
 
 Please follow this guideline when reporting bugs and feature requests:
 
-1. Use [GitHub Issues](https://github.com/tinyeye/ng-chat/issues) board to report bugs and feature requests.
+1. Use [GitHub Issues](https://github.com/paulbistr/ng-chat/issues) board to report bugs and feature requests.
 2. Please **always** write the steps to reproduce the error. This will make it easier to reproduce, identify and fix bugs.
 
 Thanks for understanding!
