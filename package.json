@@ -1,6 +1,6 @@
 {
   "name": "@paulbistr/ng-chat",
-  "version": "5.0.0",
+  "version": "5.0.2",
   "description": "A simple facebook/linkedin lookalike chat module for Angular applications.",
   "author": "Rafael Carvalho",
   "license": "MIT",
@@ -9,7 +9,10 @@
     "url": "https://github.com/paulbistr/ng-chat/issues"
   },
   "peerDependencies": {
-    "rxjs": "^7.8.1"
+    "rxjs": "^7.8.1",
+    "@angular/core": ">=20.0.0 <21",
+    "@angular/common": ">=20.0.0 <21",
+    "@angular/forms": ">=20.0.0 <21"
   },
   "devDependencies": {
     "@angular/animations": "^20.1.4",
